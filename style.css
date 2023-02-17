@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+/* 
+define elemento raiz do codigo
+:root{
+    font-size: 16px;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+
+body{
+    background: linear-gradient(45deg, white, black);
+    background-repeat: no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+ chamar div .nomedadiv 
+ chamar id #nomedoid 
+*/
+
+main.container{
+    background: white;
+    max-width: 350vw;
+    min-height: 40vh;
+    padding: 10rem;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+    border-radius: 35px;
+}
+
+main h2{
+    font-weight: 600;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+main h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, red, purple);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.campus input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0,0,0,0.7);
+}
+
+.campus input::placeholder{
+    color: rgba(0,0,0,0.5);
+    
+}
+
+#botao{
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background: linear-gradient(to left,rgb(253, 10, 10), rgb(124, 7, 124));
+    cursor: pointer;
+    color: white;
+    font-size: 0.9;
+    font-weight: 300;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#botao:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left rgb(253, 24, 24), rgb(133, 12, 133));
+    box-shadow: 15px 15px 155px rgb(255, 0, 0);
+}
+
+form .campus:first-child{
+    margin-bottom: 1.5rem;
+}
+
+.campus .underline::before{
+    content: '';
+    position: 100px;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+}
